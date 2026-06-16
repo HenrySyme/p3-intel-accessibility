@@ -18,10 +18,10 @@ header {
 }
 
 #logo {
-  width: 20cqw; 
+  width: clamp(20cqw, 300px, 80cqw); 
 }
 
-h1 {
+.sub-text {
   color: white;
   text-align: center;
   font-family: 'Intel Clear', 'Segoe UI'
@@ -29,10 +29,12 @@ h1 {
 
 #ParagraphText{
   color: white;
-  width: 30cqw; 
+  width: clamp(30cqw, 300px, 95cqw); 
   text-align: center;
   font-family: 'Intel One Mono', monospace;
 }
+
+
 
 .mainContent{
   display: flex;
@@ -72,6 +74,42 @@ h1 {
   box-sizing: border-box;
   opacity:0;
   transition: opacity 0.3s ease;
+}
+
+.spaced-col{
+  margin: auto;
+  background-color:#67ACF5;
+  border-radius: 20px
+}
+
+.articles{
+  padding-top: 40px;
+  background-color: rgb(231, 231, 231)
+}
+
+.centered-button{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #67ACF5;
+  padding:1cqw
+}
+
+.highlight{
+  background-color: white;
+  padding:3cqw
+}
+
+.external-link{
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+  border: 3px solid white
+}
+
+.icon{
+  height: 40px;
+  width: 40px;
 }
 
 .eventNode:hover .Description{
