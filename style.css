@@ -1,0 +1,83 @@
+/* Add your CSS here */
+
+body {
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(to right, #237EDB, #67ACF5);
+  container-type: inline-size;
+  height: 400px;
+  padding:0;
+  border:0;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+#logo {
+  width: 20cqw; 
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Intel Clear', 'Segoe UI'
+}
+
+#ParagraphText{
+  color: white;
+  width: 30cqw; 
+  text-align: center;
+  font-family: 'Intel One Mono', monospace;
+}
+
+.mainContent{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; 
+}
+
+.timeline{
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  width: 80cqw;
+  height: 40cqh
+}
+
+.eventNode{
+  position: relative;
+  flex: 0 0 200px;
+}
+
+.Description{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color:lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity:0;
+  transition: opacity 0.3s ease;
+}
+
+.eventNode:hover .Description{
+  opacity: 1;
+}
+
+.ending{
+  background-color:aliceblue;
+}
